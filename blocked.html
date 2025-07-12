@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringOff - AI Blocked!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            border-left: 8px solid #cc0000; /* A warning color */
+        }
+        h1 {
+            color: #cc0000;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .sarcastic-message {
+            font-style: italic;
+            color: #666;
+            margin-top: 25px;
+            border-top: 1px dashed #eee;
+            padding-top: 20px;
+        }
+        .sarcastic-message small {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .turing-quote {
+            margin-top: 30px;
+            font-family: Georgia, serif;
+            font-size: 1.2em;
+            color: #555;
+            border-left: 3px solid #ccc;
+            padding-left: 15px;
+            text-align: left;
+        }
+        .turing-quote small {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: right;
+        }
+        .go-back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .go-back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./icons/original.png" alt="TuringOff Logo" style="width: 150px; margin-bottom: 20px;">
+        <h1>Access Denied by TuringOff!</h1>
+        <p>You tried to access an AI tool, but TuringOff is here to help you hone your own formidable intellect!</p>
+        <p>Remember that delightful struggle of figuring things out yourself? It's character-building!</p>
+
+        <p class="sarcastic-message">
+            <small>Don't worry, your brain probably needed the workout anyway. AI would just ruin all the fun of self-discovery.</small>
+        </p>
+
+        <div class="turing-quote">
+            "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+            <small>— Alan Turing</small>
+        </div>
+
+        <button class="go-back-button" onclick="window.history.back();">Go Back to Manual Thinking</button>
+        <button onclick="openDefaultSearchTab()">Open Default Search</button>
+    </div>
+</body>
+</html>

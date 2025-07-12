@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "openai.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "gemini.google.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "perplexity.ai",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "anthropic.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "coze.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "copilot.microsoft.com",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "chat.lmsys.org",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome-extension://__MSG_@@extension_id__/blocked.html"
+      }
+    },
+    "condition": {
+      "regexFilter": "google\\.com/search\\?q=.*gemini",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
