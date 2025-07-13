@@ -1,5 +1,3 @@
-// ai-blocker/popup.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const toggleSwitch = document.getElementById('toggleBlocking');
     const statusText = document.getElementById('statusText');
