@@ -1,104 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuringOff - AI Blocked!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuringOff - AI Blocked</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
-            text-align: center;
-            flex-direction: column;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            max-width: 600px;
-            width: 90%;
-            border-left: 8px solid #cc0000; /* A warning color */
-        }
-        h1 {
-            color: #cc0000;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .sarcastic-message {
-            font-style: italic;
-            color: #666;
-            margin-top: 25px;
-            border-top: 1px dashed #eee;
-            padding-top: 20px;
-        }
-        .sarcastic-message small {
-            font-size: 0.9em;
-            color: #888;
-        }
-        .turing-quote {
-            margin-top: 30px;
-            font-family: Georgia, serif;
-            font-size: 1.2em;
-            color: #555;
-            border-left: 3px solid #ccc;
-            padding-left: 15px;
-            text-align: left;
-        }
-        .turing-quote small {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.8em;
-            color: #777;
-            text-align: right;
-        }
-        .btn-think-manually {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-think-manually:hover {
-            background-color: #0056b3;
-        }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #0f0f0f;
+        color: #f0f0f0;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-color: #1e1e1e;
+        border-radius: 12px;
+        box-shadow: 0 0 20px 2px rgba(255, 0, 0, 0.2);
+        padding: 40px;
+        max-width: 640px;
+        width: 95%;
+        /* border-left: 6px solid #ff2e2e; */
+      }
+
+      h1 {
+        color: #ff4d4d;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      .sarcastic-message {
+        font-style: italic;
+        color: #aaa;
+        margin-top: 25px;
+        border-top: 1px dashed #444;
+        padding-top: 20px;
+      }
+
+      .turing-quote {
+        margin-top: 30px;
+        font-family: Georgia, serif;
+        font-size: 1.2em;
+        color: #bbb;
+        border-left: 4px solid #888;
+        padding-left: 15px;
+        text-align: left;
+      }
+
+      .turing-quote small {
+        display: block;
+        margin-top: 10px;
+        font-size: 0.8em;
+        color: #999;
+        text-align: right;
+      }
+
+      .btn-think-manually {
+        background-color: #ff6666; /* ironic red tone */
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .btn-think-manually:hover {
+        background-color: #e60000;
+        transform: scale(1.05);
+      }
+
+      .btn-think-manually:active {
+        transform: scale(0.98);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+      }
+
+      img {
+        width: 140px;
+        margin-bottom: 25px;
+        filter: grayscale(0) contrast(1.2);
+      }
+
+      code {
+        background-color: #222;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.95em;
+        color: #ffcc00;
+      }
+
+      .btn-surrender {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 20px;
+        background-color: #444;
+        color: #ccc;
+        border: 1px solid #666;
+        border-radius: 6px;
+        font-size: 0.9em;
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+      .buttons-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 15px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img src="./icons/original.png" alt="TuringOff Logo" style="width: 150px; margin-bottom: 20px;">
-        <h1>Access Denied by TuringOff!</h1>
-        <p>You tried to access an AI tool, but TuringOff is here to help you hone your own formidable intellect!</p>
-        <p>Remember that delightful struggle of figuring things out yourself? It's character-building!</p>
+      <img src="./icons/original.png" alt="TuringOff Logo" id="original-icon" />
+      <img
+        src="./icons/havingFun.png"
+        alt="TuringOff Logo"
+        id="fun-icon"
+        hidden
+      />
+      <h1>Nice Try, Human.</h1>
+      <p>
+        You've attempted to outsource thinking to a bot.<br />
+        <code>TuringOff</code> intercepted this act of intellectual laziness.
+      </p>
 
-        <p class="sarcastic-message">
-            <small>Don't worry, your brain probably needed the workout anyway. AI would just ruin all the fun of self-discovery.</small>
-        </p>
+      <p id="main-message"></p>
+      <p class="sarcastic-message">
+        <span id="sarcasm-message"></span>
+        <br /><small>— TuringOff Disciplinary Unit</small>
+      </p>
 
-        <div class="turing-quote">
-            "We can only see a short distance ahead, but we can see plenty there that needs to be done."
-            <small>— Alan Turing</small>
-        </div>
+      <p class="sarcastic-message">
+        “What if you just... tried thinking?” <br />
+        <small>— A surprisingly underused debugging technique.</small>
+      </p>
 
-        <button class="btn-think-manually">Go Back to Manual Thinking</button>
+      <div class="turing-quote">
+        “We can only see a short distance ahead, but we can see plenty there
+        that needs to be done.”
+        <small>— Alan Turing</small>
+      </div>
+
+      <div class="buttons-container">
+        <button class="btn-think-manually">Return to Manual Mode</button>
+        <button class="btn-surrender">I give up, enable AI</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 
-<script src="blocked.js"></script>
+<script type="module" src="blocked.js"></script>

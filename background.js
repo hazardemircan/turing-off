@@ -1,7 +1,7 @@
 const AI_DOMAINS = [
   "openai.com",
   "chatgpt.com",
-  "gemini.google.com",
+  "gemini.google",
   "perplexity.ai",
   "anthropic.com",
   "coze.com",
