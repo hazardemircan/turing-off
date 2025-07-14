@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringOff - AI Blocker Privacy Policy</title>
+     <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.6em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #34495e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 40px;
+        }
+        .compliance-note {
+            background-color: #e8f5e9; /* Light green */
+            border-left: 5px solid #4CAF50; /* Green border */
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./icons/logo.png" alt="TuringOff Logo" style="display: block; margin: 0 auto 20px; width: 128px; height: 128px;">
+        <h1>TuringOff - AI Blocker Privacy Policy</h1>
+
+        <p class="last-updated">Last Updated: July 14, 2025</p>
+
+        <p>This Privacy Policy describes how the "TuringOff - AI Blocker" Chrome Extension ("the Extension") operates regarding your data. Your privacy is a top priority, and we are committed to being transparent about our practices.</p>
+
+        <h2>1. What Data We Collect (and What We DON'T)</h2>
+        <p>The TuringOff Extension is designed with your privacy in mind. We collect minimal, non-personal data necessary for its core functionality:</p>
+        <ul>
+            <li><strong>Extension Blocking Status:</strong> The Extension stores a single setting indicating whether the AI blocking feature is currently 'enabled' or 'disabled' by the user. This preference is stored locally in your browser's `chrome.storage.sync` and is synchronized by Chrome across your signed-in devices for convenience.</li>
+        </ul>
+        <p><strong>We DO NOT collect, store, or transmit:</strong></p>
+        <ul>
+            <li>Any personally identifiable information (e.g., name, email, IP address, device IDs).</li>
+            <li>Your **browsing history** or visited URLs (beyond what is locally processed to apply blocking rules).</li>
+            <li>The content of your web pages or any text you input into forms.</li>
+            <li>Any data about your interactions with AI tools (other than the fact that an attempt to access or communicate with one was blocked).</li>
+            <li>Any diagnostic, usage, or analytics data that could identify you.</li>
+        </ul>
+
+        <h2>2. How We Use Your Data</h2>
+        <p>The minimal data collected (your blocking preference) is used for one purpose only:</p>
+        <ul>
+            <li>To enable or disable the AI blocking functionality of the Extension based on your last chosen setting.</li>
+        </ul>
+        <p>No other use, analysis, or processing of this data occurs.</p>
+
+        <h2>3. Data Sharing and Disclosure</h2>
+        <p>As the TuringOff Extension does not collect any personal user data and operates entirely locally within your browser, there is **no data to share or disclose to any third parties.**</p>
+
+        <h2>4. Permissions Used and Their Justification</h2>
+        <p>The TuringOff Extension requests specific permissions to function correctly. Each permission is used solely for the stated purpose of blocking AI tools and providing user feedback:</p>
+        <ul>
+            <li>
+                <h3><code>declarativeNetRequest</code></h3>
+                <p><strong>Justification:</strong> This is the core permission for blocking AI tools. It allows the Extension to intercept and redirect network requests to predefined AI service domains (like ChatGPT, Gemini, etc.) at the browser's network layer. This ensures efficient blocking while enhancing user privacy, as the requests are handled internally by the browser's engine based on declared rules, not by the Extension's JavaScript directly.</p>
+            </li>
+            <li>
+                <h3><code>host_permissions</code> (`*://*/*`)</h3>
+                <p><strong>Justification:</strong> This broad host permission is necessary for the `declarativeNetRequest` API to apply blocking and redirection rules universally across all AI service domains, regardless of their specific subdomain or path. It allows the Extension to effectively target and block AI tools across the internet. No user **browsing data** is collected or monitored with this permission.</p>
+            </li>
+            <li>
+                <h3><code>storage</code></h3>
+                <p><strong>Justification:</strong> Used to save and remember your 'blocking enabled' or 'blocking disabled' preference locally within your Chrome browser's user profile. This preference is essential for the Extension to maintain your chosen state across browser sessions. No personal information is stored or synchronized externally.</p>
+            </li>
+            <li>
+                <h3><code>webRequest</code></h3>
+                <p><strong>Justification:</strong> This permission is used observationally (without the 'blocking' option) to detect when a request to a blocked AI domain occurs. This allows the Extension to trigger a non-intrusive system notification to inform you that an AI access attempt was blocked, providing immediate feedback on its operation. No request data is collected or transmitted externally beyond the local notification.</p>
+            </li>
+            <li>
+                <h3><code>activeTab</code></h3>
+                <p><strong>Justification:</strong> This permission may be used to access information about the currently active tab (such as its URL or title) when the Extension's popup UI is open. This is for potential future contextual features related to the user's current **browsing** focus. No ongoing **browsing history** is collected or transmitted.</p>
+            </li>
+        </ul>
+
+        <div class="compliance-note">
+            <h3>Compliance with Manifest V3 and Single Purpose</h3>
+            <p>The TuringOff Extension is built on Manifest V3, adhering to Chrome's latest security and privacy standards. Its **single purpose** is clear: to block user access to specified Artificial Intelligence (AI) tools (e.g., ChatGPT, Google Gemini, Microsoft Copilot) to encourage independent problem-solving, deep learning, and focused work.</p>
+            <p>The Extension **does not use any remotely hosted code**. All code is included directly within the extension package itself, ensuring user security and predictable behavior.</p>
+        </div>
+
+
+        <h2>5. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or the TuringOff Extension, please don't hesitate to reach out. We're here to help you on your journey to independent thinking!</p>
+        <p>You can contact us via email: <strong><a href="mailto:turingoff.extension@gmail.com">turingoff.extension@gmail.com</a></strong></p>
+        <p>For bug reports, feature requests, or general discussions, we highly encourage you to **open an issue** on our GitHub repository:</p>
+        <p><a href="https://github.com/hazardemircan/turing-off/issues" target="_blank">TuringOff GitHub Issues</a></p>
+
+
+    </div>
+</body>
+</html>
