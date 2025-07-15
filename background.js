@@ -12,8 +12,6 @@ const AI_DOMAINS = [
 // Special regex rule for Gemini on Google search
 const GOOGLE_GEMINI_REGEX = "google\\.com/search\\?q=.*gemini";
 
-let BASE_RULES = [];
-
 let isBlockingEnabled = true;
 function generateRules(extensionId) {
   const rules = [];
