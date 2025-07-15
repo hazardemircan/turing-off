@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>TuringOff - AI Blocker</title>
-    <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-    <h1>AI Blocker</h1>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+      <img src="./icons/icon48.png" alt="TuringOff Logo" />
+
+    <h1>🧠 TuringOff</h1>
+    <p class="tagline">Because thinking is *still* legal.</p>
+
     <label class="switch">
-        <input type="checkbox" id="toggleBlocking">
-        <span class="slider round"></span>
+      <input type="checkbox" id="toggleBlocking" />
+      <span class="slider round"></span>
     </label>
-    <span id="statusText">Blocking Enabled</span>
+
+    <div id="statusText">Loading AI shame status...</div>
+
+    <p class="quote" id="statusQuote"></p>
+
+    <footer class="footer">
+      TuringOff <span id="versionText"></span>. Proudly analog.
+    </footer>
+
     <script src="popup.js"></script>
-</body>
+  </body>
 </html>
