@@ -1,8 +1,8 @@
-# 🧠 TuringOff - AI Blocker
+# 🧠 turing-off - AI Blocker
 
 > A local firewall for your consciousness.
 
-**TuringOff** is a Chrome extension that blocks AI chatbot websites to encourage manual thinking and reduce dependency on artificial intelligence for problem-solving. Because thinking is *still* legal.
+**turing-off** is a Chrome extension that blocks AI chatbot websites to encourage manual thinking and reduce dependency on artificial intelligence for problem-solving. Because thinking is *still* legal.
 
 ## 🎯 Features
 
@@ -28,7 +28,7 @@ The extension currently blocks access to:
 ## 🛠 Installation
 
 ### From Chrome Web Store
-1. Visit the [TuringOff Chrome Web Store page](https://chromewebstore.google.com/detail/turingoff-ai-blocker/gdfghejnpofikgbjgljnacafgflijkbd)
+1. Visit the [turing-off Chrome Web Store page](https://chromewebstore.google.com/detail/turing-off-ai-blocker/gdfghejnpofikgbjgljnacafgflijkbd)
 2. Click "Add to Chrome"
 3. Confirm the installation
 
@@ -41,7 +41,7 @@ The extension currently blocks access to:
 
 ## 🎮 Usage
 
-1. **Toggle Blocking**: Click the TuringOff icon in your browser toolbar to open the popup
+1. **Toggle Blocking**: Click the turing-off icon in your browser toolbar to open the popup
 2. **Enable/Disable**: Use the toggle switch to turn AI blocking on or off
 3. **Status Monitoring**: The popup shows current blocking status with themed quotes
 4. **Blocked Page**: When you try to access a blocked AI site, you'll see a custom page with:
@@ -142,10 +142,10 @@ This project is open source. Feel free to use, modify, and distribute as needed.
 
 ## 🔗 Links
 
-- [Chrome Web Store Listing](https://chromewebstore.google.com/detail/turingoff-ai-blocker/gdfghejnpofikgbjgljnacafgflijkbd)
+- [Chrome Web Store Listing](https://chromewebstore.google.com/detail/turing-off-ai-blocker/gdfghejnpofikgbjgljnacafgflijkbd)
 
 ---
 
 *"We can only see a short distance ahead, but we can see plenty there that needs to be done."* — Alan Turing
 
-**TuringOff v1.0** - Proudly analog since 2025.
+**turing-off v1.0** - Proudly analog since 2025.
