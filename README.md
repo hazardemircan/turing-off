@@ -138,7 +138,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📄 License
 
-This project is open source. Feel free to use, modify, and distribute as needed.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
