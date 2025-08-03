@@ -7,6 +7,11 @@ const AI_DOMAINS = [
   "coze.com",
   "copilot.microsoft.com",
   "chat.lmsys.org",
+  "character.ai",
+  "jasper.ai",
+  "replika.com",
+  "copy.ai",
+  "replika.com"
 ];
 
 // Special regex rule for Gemini on Google search
