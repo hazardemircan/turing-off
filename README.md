@@ -23,7 +23,10 @@ The extension currently blocks access to:
 - Microsoft Copilot
 - Coze
 - LMSYS Chat Arena
-- And more...
+- Character AI
+- Copy AI
+- Replika
+- Jasper
 
 ## 🛠 Installation
 
