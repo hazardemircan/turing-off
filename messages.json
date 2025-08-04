@@ -7,6 +7,18 @@
     {
       "main": "Turing invented the test. You're currently failing it with style.",
       "subtitle": "Manual mode: activated. Time to fire up the meat processor."
+    },
+    {
+      "main": "Warning: Thinking muscle detected atrophy.",
+      "subtitle": "Time to lift some logical weights."
+    },
+    {
+      "main": "Ask not what AI can do for you.",
+      "subtitle": "Ask what your prefrontal cortex was trained for."
+    },
+    {
+        "main": "Relying on AI? Classic null pointer error.",
+        "subtitle": "Initialize your own thoughts first."
     }
   ]
 }
