@@ -1,0 +1,53 @@
+/* 
+ * TuringOff Icon Styles
+ * This CSS handles icon visibility on both light and dark backgrounds
+ */
+
+.turingoff-logo {
+  /* Basic styling for all contexts */
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  
+  /* Add a light glow effect for dark backgrounds (default) */
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+  
+  /* Add a light circular background */
+  background-color: rgba(255, 255, 255, 0.12);
+  
+  /* Ensure image contrast */
+  image-rendering: crisp-edges;
+  
+  /* Transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Special styling for light backgrounds (if needed) */
+.light-background .turingoff-logo {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.turingoff-logo:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: scale(1.05);
+}
+
+/* Hover effect for light backgrounds */
+.light-background .turingoff-logo:hover {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Specific adjustments for popup */
+.popup-logo {
+  margin-bottom: 10px;
+}
+
+/* Specific adjustments for blocked page */
+.blocked-logo {
+  margin-bottom: 25px;
+  width: 140px;
+}

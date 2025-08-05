@@ -23,7 +23,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["blocked.html"],
+      "resources": ["blocked.html", "blocked.css", "icon-styles.css", "logo-visibility.js"],
       "matches": ["<all_urls>"]
     }
   ]
