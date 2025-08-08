@@ -3,135 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./blocked.css">
     <title>TuringOff - AI Blocked</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: #0f0f0f;
-        color: #f0f0f0;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .container {
-        background-color: #1e1e1e;
-        border-radius: 12px;
-        box-shadow: 0 0 20px 2px rgba(255, 0, 0, 0.2);
-        padding: 40px;
-        max-width: 640px;
-        width: 95%;
-        /* border-left: 6px solid #ff2e2e; */
-      }
-
-      h1 {
-        color: #ff4d4d;
-        margin-bottom: 20px;
-        font-size: 2.2em;
-      }
-
-      p {
-        font-size: 1.1em;
-        line-height: 1.7;
-        margin-bottom: 15px;
-      }
-
-      .sarcastic-message {
-        font-style: italic;
-        color: #aaa;
-        margin-top: 25px;
-        border-top: 1px dashed #444;
-        padding-top: 20px;
-      }
-
-      .turing-quote {
-        margin-top: 30px;
-        font-family: Georgia, serif;
-        font-size: 1.2em;
-        color: #bbb;
-        border-left: 4px solid #888;
-        padding-left: 15px;
-        text-align: left;
-      }
-
-      .turing-quote small {
-        display: block;
-        margin-top: 10px;
-        font-size: 0.8em;
-        color: #999;
-        text-align: right;
-      }
-
-      .btn-think-manually {
-        background-color: #ff6666; /* ironic red tone */
-        color: white;
-        border: none;
-        border-radius: 12px;
-        padding: 12px 24px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      .btn-think-manually:hover {
-        background-color: #e60000;
-        transform: scale(1.05);
-      }
-
-      .btn-think-manually:active {
-        transform: scale(0.98);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-      }
-
-      img {
-        width: 140px;
-        margin-bottom: 25px;
-        filter: grayscale(0) contrast(1.2);
-      }
-
-      code {
-        background-color: #222;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-size: 0.95em;
-        color: #ffcc00;
-      }
-
-      .btn-surrender {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 10px 20px;
-        background-color: #444;
-        color: #ccc;
-        border: 1px solid #666;
-        border-radius: 6px;
-        font-size: 0.9em;
-        cursor: not-allowed;
-        opacity: 0.6;
-      }
-      .buttons-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        gap: 15px;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container shadow-effect">
       <img  src="./icons/original.png" alt="TuringOff Logo" id="original-icon" />
       <img
         src="./icons/havingFun.png"
@@ -140,18 +16,18 @@
         hidden
       />
       <h1>Nice Try, Human.</h1>
-      <p>
+      <p class="message">
         You've attempted to outsource thinking to a bot.<br />
         <code>TuringOff</code> intercepted this act of intellectual laziness.
       </p>
 
-      <p id="main-message"></p>
-      <p class="sarcastic-message">
+      <p id="main-message" class="message"></p>
+      <p class="sarcastic-message message">
         <span id="sarcasm-message"></span>
         <br /><small>— TuringOff Disciplinary Unit</small>
       </p>
 
-      <p class="sarcastic-message">
+      <p class="sarcastic-message message">
         “What if you just... tried thinking?” <br />
         <small>— A surprisingly underused debugging technique.</small>
       </p>
