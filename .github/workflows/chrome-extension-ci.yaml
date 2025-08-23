@@ -1,0 +1,39 @@
+name: Chrome Extension CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      #Commented out Node.js setup and package installation; uncomment if extension contains any node packages
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18'
+
+      # - name: Install dependencies
+      #   run: npm install
+
+      #Commented out build step; uncomment when extension requires a build process
+      #- name: Build extension (if applicable)
+      # run: npm run build 
+
+      - name: Package extension
+        id: package
+        run: |
+          zip -r extension.zip src/
+
+      - name: Publish to Chrome Web Store
+        uses: easy-chrome-web-store/action@v2
+        with:
+          extension-id: ${{ secrets.EXTENSION_ID }}
+          client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
+          client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          refresh-token: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          zip-path: extension.zip
