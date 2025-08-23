@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       #Commented out Node.js setup and package installation; uncomment if extension contains any node packages
       # - name: Setup Node.js
-      #   uses: actions/setup-node@v3
+      #   uses: actions/setup-node@v4
       #   with:
       #     node-version: '18'
 
@@ -30,10 +30,10 @@ jobs:
           zip -r extension.zip src/
 
       - name: Publish to Chrome Web Store
-        uses: easy-chrome-web-store/action@v2
+        uses: mnao305/chrome-extension-upload@v5.0.0
         with:
+          file-path: extension.zip
           extension-id: ${{ secrets.EXTENSION_ID }}
           client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
           client-secret: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           refresh-token: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          zip-path: extension.zip
